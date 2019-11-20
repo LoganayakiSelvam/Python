@@ -5,11 +5,11 @@ print(location)
 source=int(input("enter source: "))
 destination=int(input("enter destination: "))
 if "isalpha" in source and destination:
-  print(invalid)
+  print("invalid")
 elif source==0 and destination==0:
-  print(enter valid number)
+  print("enter valid number")
 elif"-" in source and destination:
-  print(enter a positive value)
+  print("enter a positive value")
 else:
  x=destination-source
  print(x)
