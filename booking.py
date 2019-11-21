@@ -14,3 +14,36 @@ elif select=="car":
 elif select=="premium":
  km=x*20
 print(km)
+
+
+start=int(input("enter starting range: "))
+end=int(input("enter ending range: "))
+for i in range(start,end):
+ if(i%2==0):
+  print("even number",i)
+ else:
+  print("odd",i)
+
+
+
+n=int(input("enter number: "))
+for i in range(0,n):
+  for j in range(0,n-i-1):
+    print(end=" ")
+  for j in range(i+1):
+    print("*",end=" ")
+  print()
+for i in range(n,0):
+  for j in range(0,n-i-1):
+    print(end=" ")
+  for j in range(i-1):
+    print("*",end=" ")
+  print()
+
+
+
+
+
+
+
+
