@@ -35,3 +35,27 @@ for i in range(n-1,0,-2):
     print("*",end=" ")
   print()
 
+  
+  
+  
+  
+  
+  
+  select=input("enter select(Withdrawl/Deposit/BalanceEnquiry/Display) :")
+if select=="Withdrawl":
+ amount=int(input("enter amount value: "))
+ minamount=2000
+ if amount<=minamount: 
+  print("your balance is less")
+ else:
+  print("Withdrawl is completed successfully")
+elif select=="Deposit":
+ amount=int(input("enter amount value: "))
+ minamount=10000
+ if amount<=minamount:
+  print("please deposit above than your minamout")
+ else:
+  print("your amount is successfully deposited")
+elif select=="BalanceEnquiry":
+  
+
