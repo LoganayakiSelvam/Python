@@ -1,27 +1,30 @@
-def accno():
-  try:
-    no=int(intput("Enter the accno:"))
-    return no
-  except TypeError:
-    print("enter valid accno")
-    accno()
-
 def name():
-  na=input("Enter the name:")
-  for i in na:
-    if ord(i) not in range(65,123):
+  name=input("Enter the name:")
+  for i in name:
+    if ord(i) not in range(45,134):
       print("Enter the correct name:") 
       name()
-  return na
+  return name
+
+
+def accno():
+  try:
+    accno=int(intput("Enter the accno:"))
+    return accno
+  except TypeError:
+    print("accno must contain only integer values")
+    accno()
+
+
 
 def pas():
   try:
-    pword=int(input("Enter the password:"))
-    return pword
+    password=int(input("Enter the password:"))
+    return password
   except TypeError:
-    if len(data['ps'])<8:
+    if len('pas')<8:
      print("Enter the correct password which contains 8 characters")
-  pas()
+    pas()
 
 
 
@@ -33,24 +36,20 @@ def pas():
 choice=input("enter choice(Create new account/Login to existing account) :")
 if choice=="Create new account":
  try:
-  accno=int(intput("Enter the accno:"))
+  accno=int(input("Enter the accno:"))
  except ValueError:
   print('\nType an integer not characters or symbols\nTry again\n')
 elif choice=="Login to existing account":
+ user_name=name() 
  account_no=accno()
- user_name=name()
  password=pas()
   if account_no in d and user_name in d and pasword in d:
     select()
 else:
- print('\nInvalid choice choices are between(1-2)\n')
+ print("invalid select only Create new account or Login to existing account")
     
 
-firstname=input("first name:")
-lastname=input("last name:")
-create_username=input("username:")
-create_password=input("password:")
-accno4=int(input("accno:")) 
+
 def select():
  select=input("enter select(Withdrawl/Deposit/BalanceEnquiry/Display) :")
  if select=="Withdrawl":
@@ -70,6 +69,11 @@ def select():
  elif select=="BalanceEnquiry":
   print("balance details")
  elif select=="Display":
+  firstname=input("first name:")
+  lastname=input("last name:")
+  create_username=input("username:")
+  create_password=input("password:")
+  accno4=int(input("accno:")) 
   print(firstname+" "+lastname,'\n',create_username,'\n',create_password,)
  else:
   print("invalid")
