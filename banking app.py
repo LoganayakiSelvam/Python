@@ -43,8 +43,8 @@ elif choice=="Login to existing account":
  user_name=name() 
  account_no=accno()
  password=pas()
-  if account_no in d and user_name in d and pasword in d:
-    select()
+ if account_no in d and user_name in d and pasword in d:
+  select()
 else:
  print("invalid select only Create new account or Login to existing account")
     
