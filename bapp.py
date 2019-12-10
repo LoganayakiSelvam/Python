@@ -1,11 +1,11 @@
 accno=int(input("enter aacno :"))
-ganil=input("enter gmail :")
+gmail=input("enter gmail :")
 values='^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$' 
-if values in gamil:
+if values in gmail:
  print("valid")
  break
 else:
- print("enter valid gamil")
+ print("enter valid gmail")
  contine
 pswrd=int(input("enter the pswrd :"))
 l=len(pswrd)
@@ -16,11 +16,11 @@ else:
  print("valid")
  break
 mbno=int(input("enter the mbno:")) 
-if len(mobno)!=10 or mobno[0]!=9:
+if len(mbno)!=10 or mobno[0]!=9:
  print("enter valid mobile no")
  continue
 else: 
- print("mobno:",mobno)
+ print("mbno:",mbno)
  break
 select=input("enter select(Withdrawl/Deposit/BalanceEnquiry/Display) :")
 if select=="Withdrawl":
@@ -38,9 +38,9 @@ elif select=="Deposit":
  else:
   print("your amount is successfully deposited")
 elif select=="BalanceEnquiry":
- a=int(2000,3000) 
+ a=random.randint(1000,9000) 
  print("accno:",a)
- balance=9000  
+ balance=7900
  print("available balance :",balance) 
 elif select=="Display":
   print("gmail:",gmail) 
